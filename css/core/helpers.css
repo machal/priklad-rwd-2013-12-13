@@ -1,0 +1,17 @@
+/*
+
+--- Helpery ---
+
+*/
+
+.clear {
+  clear: both;
+  font-size: 1px;
+  line-height: 1px;
+  height: 1px;
+}
+
+.hide-on-screen {
+  position: absolute;
+  top: -500px;
+}
