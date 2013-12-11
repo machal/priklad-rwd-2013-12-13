@@ -1,0 +1,38 @@
+/* 
+Pattern by Brad Frost 
+http://codepen.io/bradfrost/pen/sHvaz
+*/
+
+.nav-link {
+    float: right;
+    display: block;
+    padding: 1em;
+}
+
+[role=navigation] {
+	clear: both;
+	-webkit-transition: all 0.3s ease-out;  
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.js [role=navigation] {
+	overflow: hidden;
+	max-height: 0;
+}
+
+[role=navigation].active {
+	max-height: 15em;
+}
+
+@media screen and (min-width: 600px) {
+	.nav-link {
+	   display: none;
+	}
+	
+	.js [role=navigation] {
+		max-height: none;
+	}
+}
