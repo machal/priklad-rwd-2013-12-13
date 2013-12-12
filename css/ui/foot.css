@@ -10,7 +10,7 @@
 	.foot {
     margin-top: 48px;
 	  clear: both;
-	  padding: 16px 30px;
+	  padding: 1.6326530612% 30px; /* 16/980*100 */
 	  background-color: #ccc;
 	  color: #999;
 	}

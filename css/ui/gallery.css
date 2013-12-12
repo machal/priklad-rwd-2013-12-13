@@ -5,17 +5,13 @@
 */
 
 .gallery {
-	margin-right: -20px; /* Prostor pro margin treti .gallery-item v radku */
+	margin-right: -3.5714285714%; /* -20/560*100 Prostor pro margin treti .gallery-item v radku */
 }
 
 .gallery-item {
 	float: left;
-	width: 170px;
-	margin: 0 15px 15px 0;
-}
-
-.gallery-item img {
-	width: 170px;
+	width: 30.357142857%; /* 170/560*100 */
+	margin: 0 2.6785714286% 2.6785714286% 0; /* 15/560*100 */
 }
 
 .gallery-item a {
