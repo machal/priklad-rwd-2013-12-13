@@ -8,3 +8,12 @@
 	background: url('../../img/sportsmen.png') no-repeat right center;
 	background-size: auto 150%;
 }
+
+@media screen and (max-width: 599px) {
+
+  .logo img {
+    height: 37px;
+    width: auto;
+  }
+
+}
