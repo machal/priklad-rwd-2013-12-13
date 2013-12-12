@@ -1,38 +1,60 @@
-/* 
-Pattern by Brad Frost 
+/*
+
+--- Navigace pro male/velke screeny ---
+
+Pattern by Brad Frost
 http://codepen.io/bradfrost/pen/sHvaz
 */
 
+/* -- Odkaz na navigaci na malych screenech -- */
+
+/* Odkaz na navigaci
+   <p class="nav-link"><a href="#nav">≡</a></p>
+*/
 .nav-link {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  .nav-link {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: inline-block;
+    background: red;
     float: right;
-    display: block;
-    padding: 1em;
+  }
+
+  .nav-link a {
+    display: inline-block;
+    padding: 0 10px 5px 10px;
+    font-size: 40px;
+    line-height: .6;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+  }
 }
 
-[role=navigation] {
-	clear: both;
-	-webkit-transition: all 0.3s ease-out;  
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-}
+/* -- Samotna navigace -- */
 
-.js [role=navigation] {
-	overflow: hidden;
-	max-height: 0;
-}
+@media screen and (max-width: 599px) {
 
-[role=navigation].active {
-	max-height: 15em;
-}
+  [role=navigation] {
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
 
-@media screen and (min-width: 600px) {
-	.nav-link {
-	   display: none;
-	}
-	
-	.js [role=navigation] {
-		max-height: none;
-	}
+  .js [role=navigation] {
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .js [role=navigation].active {
+    max-height: 300px;
+  }
 }
