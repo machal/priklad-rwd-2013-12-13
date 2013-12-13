@@ -55,7 +55,15 @@
 
         <p class="photo">
           <a class="fancybox" href="img/plzen_1.jpg">
-            <img src="img/plzen_1.jpg" alt="Plzeň" width="540" height="304">
+
+          <span data-picture data-alt="Plzeň">
+              <span data-src="img/plzen_1_small.jpg"></span>
+              <span data-src="img/plzen_1.jpg" data-media="(min-width: 400px)"></span>
+              <noscript>
+                  <img src="img/plzen_1.jpg" alt="Plzeň">
+              </noscript>
+          </span>
+
           </a>
         </p>
 
@@ -299,6 +307,7 @@
     </div><!-- .container -->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/picturefill.js"></script>
     <script src="fancybox/jquery.fancybox.pack.js"></script>
     <script src="js/index.js"></script>
     <script src="js/toggle-nav.js"></script>
