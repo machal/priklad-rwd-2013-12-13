@@ -1,6 +1,6 @@
-/* 
+/*
 
---- Navigace --- 
+--- Navigace ---
 
 */
 
@@ -28,7 +28,7 @@
   display: block;
   border-bottom: 1px solid #fff;
   background: black;
-  padding: 16px;
+  padding: 16px 1.6326530612%; /* 16/980*100 */
   text-decoration: none;
   text-align: center;
   height: 16px;
@@ -47,13 +47,13 @@ b .nav-item,
 
 .nav li:last-child .nav-item {
   border-bottom: none;
-}	
+}
 
 
 /* Layout pro siroke dipleje */
 
 .nav li {
-  width: 245px;
+  width: 25%; /* 245/980*100 */
   float: left;
   margin: 0;
   padding: 0;
