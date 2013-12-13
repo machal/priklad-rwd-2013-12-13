@@ -10,9 +10,55 @@
 @import 'ui/foot.css';
 @import 'ui/gallery.css';
 @import 'ui/head.css';
+@import 'ui/map.css';
 @import 'ui/nav.css';
 @import 'ui/similar-articles.css';
 @import 'ui/photo.css';
 
-/* Layout webu ve sloupeccich */
-@import 'ui/layout.css' screen;
+/*
+
+--- Layout - pro siroke displeje ---
+
+*/
+
+@media screen and (min-width: 600px) {
+
+  /* Sedive pozadi stranky */
+
+  body {
+    background: #ccc;
+  }
+
+  /* Layout  */
+
+  .container {
+    max-width: 980px;
+    position: relative;
+    margin: 16px auto;
+    background: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+    color: 0px 0px 16px rgba(0, 0, 0, 0.5);
+  }
+
+  .logo {
+    padding: 30px 3.0612244898%; /* 30/980*100 */
+    margin: 0;
+  }
+
+  .content {
+    float: left;
+    padding-left: 3.0612244898%; /* 30/980*100 */
+    padding-right: 3.0612244898%; /* 30/980*100 */
+    width: 55.102040816%; /* 540/980*100 */
+    margin-bottom: 48px;
+  }
+
+  .side {
+    float: right;
+    padding-left: 3.0612244898%; /* 30/980*100 */
+    padding-right: 3.0612244898%; /* 30/980*100 */
+    width: 32.653061224%; /* 320/980*100 */
+    margin-bottom: 48px;
+  }
+
+}
