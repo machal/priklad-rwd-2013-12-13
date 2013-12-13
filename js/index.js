@@ -8,4 +8,8 @@ $(document).ready(function(){
 
 	$(".fancybox").fancybox();
 
+  // Unveil pro lazyloading
+
+  $("img").unveil(0);
+
 })
